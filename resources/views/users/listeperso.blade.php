@@ -22,7 +22,7 @@
                   <th>Nom</th>
                   <th>Email</th>
                   <th>Date Embauchement</th>
-                  
+                  <th>Poste de Travail</th>
                 </tr>
               </thead>
               <tbody>
@@ -33,6 +33,7 @@
                   <td>{{ $users->lname}}</td>
                   <td>{{ $users->email}}</td>
                   <td>{{ $users->created_at}}</td>
+                  <td>{{ $users->poste_id}}</td>
                   
                 </tr>
               @endforeach
