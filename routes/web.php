@@ -33,7 +33,7 @@ Route::group(['middleware' =>['auth']],function(){
 
 	Route::match(['get','post'],'/admin/add-echantillon', 'EchantillonController@addEchanillon');
 	Route::match(['get','post'], '/admin/modifier-echantillon/{id}', 'EchantillonController@modifierEchantillons');
-	Route::get('/admin/voir-echantillon', 'EchantillonController@voirEchantillons');
+	Route::get('/echantillons/voir-echantillon', 'EchantillonController@voirEchantillons');
 	Route::get('/stocks', 'StocksController@index');
 	Route::get('/users/listeperso', 'UsersController@index');
   	Route::get('/substances', 'SubstancespuresController@index');
