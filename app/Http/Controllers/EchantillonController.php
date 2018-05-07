@@ -21,19 +21,24 @@ class EchantillonController extends Controller
     		$echantillon->dateFab = $data['dateFab'];
     		$echantillon->dateExp = $data['dateExp'];
     		$echantillon->save();
-            return redirect('/echantillons/voir-echantillon')->with('flash_message_success','Echantillon  ajouté avec success');
+            return redirect('/admin/voir-echantillon')->with('flash_message_success','Echantillon  ajouté avec success');
 
     	}
-    	return view('echantillons.add_echan');
+    	return view('admin.echantillons.add_echan');
     }
 
-    public function modifierEchantillons(Request $resqeust, $id = null){
+    public function modifierEchantillons(Request $request, $id = null){
+        if ($request->isMethod('post')){
+            $data = $request->all();
+            Echantillon::where(['id'=>$id])->update(['dateRecu'=>$data['dateRecu'],'nomProduit'=>$data['nomProduit'],'formeGalenique'=>$data['formeGalenique'],'quantiteRecu'=>$data['quantiteRecu'],'quantiteLivree'=>$data['quantiteLivree'],'fournisseur'=>$data['fournisseur'],'dateFab'=>$data['dateFab'],'dateExp'=>$data['dateExp']]);
+            return redirect('/admin/modifier-echantillon')->with('flash_message_success','Echantillon modifier avec success');
+        }
         $echantillonsDetails = Echantillon::where(['id'=>$id])->first();
-        return view('echantillons.modifier_echantillons')->with(compact('echantillonsDetails'));
+        return view('admin.echantillons.modifier_echantillons')->with(compact('echantillonsDetails'));
     }
 
     public function voirEchantillons(){
         $echantillons = echantillon::get();
-        return view('echantillons.voir_echantillons')->with(compact('echantillons'));
+        return view('admin.echantillons.voir_echantillons')->with(compact('echantillons'));
     }
 }
