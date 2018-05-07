@@ -14,12 +14,20 @@
     <li><a href="{{('/stocks')}}"><i class="icon icon-fullscreen"></i> <span><strong>Stock</strong> </span></a></li>
     <li class="submenu"><a href="#"><i class="icon icon-th-list"></i> <span><strong>Utilisateurs &amp; Personnel</strong> 
       <ul>
+<<<<<<< HEAD
         <li><a href="/users/listeperso"><strong>Personnel</strong> </a></li>
+=======
+        <li><a href="/users/listeperso"><strong>Accueil</strong> </a></li>
+>>>>>>> 20bceaeed38a06de45a354282737c2100b98d207
         <li><a href="#">Unites Techniques</a></li>
         <li><a href="#">Autres</a></li>
       </ul>
     </li>
+<<<<<<< HEAD
     <li><a href="buttons.html"><i class="icon icon-tint"></i><strong>Clients &amp; Fournisseurs</strong> </a></li>
+=======
+    <li><a href="{{('/stocks')}}"><i class="icon icon-tint"></i><strong>Stock &amp; Fournisseurs</strong> </a></li>
+>>>>>>> 20bceaeed38a06de45a354282737c2100b98d207
     <li><a href="interface.html"><i class="icon icon-pencil"></i> <span><strong>Tableau de bord</strong></span></a></li>
   </ul>
 </div>
