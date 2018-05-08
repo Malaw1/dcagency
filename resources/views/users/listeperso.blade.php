@@ -23,6 +23,7 @@
                   <th>Email</th>
                   <th>Date Embauchement</th>
                   <th>Poste de Travail</th>
+                  <th>Fiche Techniques</th>
                 </tr>
               </thead>
               <tbody>
@@ -33,7 +34,12 @@
                   <td>{{ $users->lname}}</td>
                   <td>{{ $users->email}}</td>
                   <td>{{ $users->created_at}}</td>
-                  <td>{{ $users->poste_id}}</td>
+                  <td>{{ $users->label}}</td>
+                  <td>
+                    <div class="fr">
+                        <a href="/#/{{ $users->id}}" class="btn btn-success btn-mini">Fiche Techniques</a>
+                      </div>
+                  </td>
                   
                 </tr>
               @endforeach
