@@ -42,6 +42,7 @@ Route::get('/logout', 'AdminController@logout');
 
 Route::get('/stocks', 'StocksController@index');
 Route::get('/users/listeperso', 'UsersController@index');
+Route::get('/users/personnel', 'UsersController@show');
 Route::get('/substances', 'SubstancespuresController@index');
 
 Route::get('/logout', 'AdminController@logout');
