@@ -25,10 +25,19 @@ class UsersController extends Controller
 //     ->select('users.*')
 //     ->first(); 
 
+        //   $users = Poste::join('users', 'users.poste_id', '=', 'postes.id')->select('users.*', 'postes.*')->get();
+        //   //dd($users);
+        // //$unites = Unite::all();
+        // return view('users.listeperso', compact('users'));
 
-          $users = Poste::join('users', 'users.poste_id', '=', 'postes.id')->select('users.*', 'postes.*')->get();
+        $users = Poste::join('users', 'users.poste_id', '=', 'postes.id')->select('users.*', 'postes.*')->get();
           
-        //$unites = Unite::all();
         return view('users.listeperso', compact('users'));
+    }
+
+    public function show(User $users)
+    {
+        $users = User::where('id', $users->id)->get();
+        return view('users.personnel', ['users'=>$users]);
     }
 }

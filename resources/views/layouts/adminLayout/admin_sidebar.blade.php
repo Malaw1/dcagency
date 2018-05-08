@@ -14,7 +14,7 @@
     <li class="submenu"><a href="#"><i class="icon icon-th-list"></i> <span><strong>Utilisateurs &amp; Personnel</strong> 
       <ul>
         <li><a href="/users/listeperso"><strong>Personnel</strong> </a></li>
-        <li><a href="#">Unites Techniques</a></li>
+        <li><a href="/unite">Unites Techniques</a></li>
         <li><a href="#">Autres</a></li>
       </ul>
     </li>

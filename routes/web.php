@@ -50,3 +50,5 @@ Route::resource('echantillons', 'EchantilonsController');
 Route::resource('reactifs', 'ReactifsController');
 Route::resource('substancespures', 'SubstancespuresController');
 Route::resource('vaccins', 'VaccinsController');
+Route::resource('users', 'UsersController');
+Route::resource('unite', 'UnitesController');

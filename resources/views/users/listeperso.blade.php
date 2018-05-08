@@ -37,7 +37,7 @@
                   <td>{{ $users->label}}</td>
                   <td>
                     <div class="fr">
-                        <a href="/#/{{ $users->id}}" class="btn btn-success btn-mini">Fiche Techniques</a>
+                        <a href="/users/{{ $users->poste_id}}" class="btn btn-success btn-mini">Fiche Personnel</a>
                       </div>
                   </td>
                   
