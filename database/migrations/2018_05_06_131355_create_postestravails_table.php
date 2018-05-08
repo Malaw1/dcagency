@@ -13,8 +13,8 @@ class CreatePostestravailsTable extends Migration
      */
     public function up()
     {
-        if(!Schema::hasTable('postestravails')){
-        Schema::create('postestravails', function (Blueprint $table) {
+        if(!Schema::hasTable('postes')){
+        Schema::create('postes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('label');
             $table->integer('unites_id')->unsigned();

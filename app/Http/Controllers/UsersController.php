@@ -37,7 +37,7 @@ class UsersController extends Controller
 
     public function show(User $users)
     {
-        $user = Reactif::where('id', $user->id)->first();
-        return view('users.personnel', ['user'=>$user]);
+        $users = User::where('id', $users->id)->get();
+        return view('users.personnel', ['users'=>$users]);
     }
 }
