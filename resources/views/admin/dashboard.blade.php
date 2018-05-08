@@ -5,27 +5,44 @@
 <div id="content">
 <!--breadcrumbs-->
   <div id="content-header">
-    <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a></div>
+    <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Accueil</a></div>
   </div>
 <!--End-breadcrumbs-->
 
 <!--Action boxes-->
   <div class="container-fluid">
-    <div class="quick-actions_homepage">
-      <ul class="quick-actions">
-        <li class="bg_lb"> <a href="index.html"> <i class="icon-dashboard"></i> <span class="label label-important">20</span> My Dashboard </a> </li>
-        <li class="bg_lg span3"> <a href="charts.html"> <i class="icon-signal"></i> Charts</a> </li>
-        <li class="bg_ly"> <a href="widgets.html"> <i class="icon-inbox"></i><span class="label label-success">101</span> Widgets </a> </li>
-        <li class="bg_lo"> <a href="tables.html"> <i class="icon-th"></i> Tables</a> </li>
-        <li class="bg_ls"> <a href="grid.html"> <i class="icon-fullscreen"></i> Full width</a> </li>
-        <li class="bg_lo span3"> <a href="form-common.html"> <i class="icon-th-list"></i> Forms</a> </li>
-        <li class="bg_ls"> <a href="buttons.html"> <i class="icon-tint"></i> Buttons</a> </li>
-        <li class="bg_lb"> <a href="interface.html"> <i class="icon-pencil"></i>Elements</a> </li>
-        <li class="bg_lg"> <a href="calendar.html"> <i class="icon-calendar"></i> Calendar</a> </li>
-        <li class="bg_lr"> <a href="error404.html"> <i class="icon-info-sign"></i> Error</a> </li>
+    <div class="row-fluid">
+       <div class="col-sm-4">
+          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+             <script type="text/javascript">
+                 google.charts.load("current", {packages:["corechart"]});
+                 google.charts.setOnLoadCallback(drawChart);
+                 function drawChart() {
+                 var data = google.visualization.arrayToDataTable([
+                  ['Nombre', 'Hours per Day'],
+                  ['Work',     11],
+                  ['Status',      2],
+                  ['Commute',  2],
+                  ['Watch TV', 2],
+                  ['Sleep',    7]
+                ]);
 
-      </ul>
-    </div>
+                  var options = {
+                    title: 'Echantillons',
+                    pieHole: 0.4,
+                  };
+
+                  var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+                  chart.draw(data, options);
+                }
+                </script>
+
+                <div id="donutchart" style="width: 500px; height: 300px;"></div>
+
+       </div>
+    </div>  
+
+  </div>
 
 <!--End-Action boxes-->    
 
