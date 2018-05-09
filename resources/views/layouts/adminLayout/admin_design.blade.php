@@ -10,9 +10,14 @@
 <link rel="stylesheet" href="{{ asset('css/backend_css/matrix-style.css') }}" />
 <link rel="stylesheet" href="{{ asset('css/backend_css/select2.css') }}" />
 <link rel="stylesheet" href="{{ asset('css/backend_css/matrix-media.css') }}" />
+<<<<<<< HEAD
 <link rel="stylesheet" href="{{ asset('css/backend_css/jquery.gritter.css') }}" />
 <link rel="stylesheet" href="{{ asset('css/backend_css/jquery.min.css') }}" />
 
+=======
+<link rel="stylesheet" href="{{ asset('css/backend_css/jquery.gritter.css') }}" /> 
+<link rel="stylesheet" href="{{ asset ('fonts/backend_fonts/css/font-awesome.css') }}" />
+>>>>>>> 6e02b2c4f8c64b6707f55492a1ad5c57be4835a7
 <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso18.css" /> 
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
 </head>
