@@ -20,6 +20,11 @@ class CreateReactifsTable extends Migration
                 $table->string('conditionnement');
                 $table->integer('lot');
                 $table->string('fabriquant');
+                $table->string('Nomscommerciaux');
+                $table->string('apparence');
+                $table->string('numEINECS');
+                $table->string('numECHA');
+                $table->string('numCAS');
                 $table->integer('quantite');
                 $table->integer('quantiteUtilise');
                 $table->date('dateFab');
