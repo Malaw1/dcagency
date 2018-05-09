@@ -71,13 +71,13 @@
                 <div class="control-group">
                 <label class="control-label">Nombre Utilise :</label>
                 <div class="controls">
-                    <input type="number" class="span11 form-control" required placeholder="Quantite Utilise" name="quantiteUtilise" spellcheck="false" />
+                    <input type="number" class="span11 form-control" required placeholder="Quantite Utilise" value="0" name="quantiteUtilise" spellcheck="false" />
                 </div>
                 </div>
 
                 
                 <div class="form-actions">
-                <button type="submit" class="btn btn-success">Save</button>
+                <button type="submit" class="btn btn-success">Enregistrer</button>
                 </div>
             </form>
             </div>

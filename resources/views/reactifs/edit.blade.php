@@ -65,7 +65,7 @@
             <div class="control-group">
               <label class="control-label">Date de reception :</label>
               <div class="controls">
-                <input type="date" class="span11 form-control" required placeholder="Date de Reception" name="created_at" spellcheck="false" value="{{ $reactif->created_at}}"  />
+                <input type="hidden" class="span11 form-control" required placeholder="Date de Reception" name="created_at" spellcheck="false" value="{{ $reactif->created_at}}"  />
               </div>
             </div>
 

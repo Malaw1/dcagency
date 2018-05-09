@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Reactif;
 use Illuminate\Http\Request;
 
+use App\proprietesphysiques;
+
+
 class ReactifsController extends Controller
 {
     /**
@@ -61,8 +64,16 @@ class ReactifsController extends Controller
      */
     public function show(Reactif $reactif)
     {
-        $reactif = Reactif::where('id', $reactif->id)->first();
-        return view('reactifs.show', ['reactif'=>$reactif]);
+        //$reactif = Reactif::where('id', $reactif->id)->first();
+        //return view('reactifs.show', ['reactif'=>$reactif]);
+
+        $users = Reactif::join('proprietesphysiques', 'reactifs.id', '=', 'proprietesphysiques.reactifs_id')
+            ->join('proprieteschimiques', 'proprieteschimiques.id', '=', 'proprieteschimiques.reactifs_id')
+            ->select('reactifs.*', 'proprietesphysiques.*', 'proprieteschimiques.*')
+            // ->where('id', $reactif->id)
+            ->get();
+            return view('reactifs.show', compact('users'));
+            dd($users);
     }
 
     /**

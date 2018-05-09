@@ -1,10 +1,14 @@
 @extends('layouts.adminLayout.admin_design')
 @section('content')
 
+
 <div id="content">
     <div id="content-header">
-    <div id="breadcrumb"> <a href="#" title="Retouner vers Reactifs" class="tip-bottom"><i class="icon-home"></i> Reactifs</a> <a href="#" class="current">Reactifs N°: {{$reactif->id}}</a> </div>
-    <h1>Reactifs N°: {{$reactif->id}}</h1>
+    <div id="breadcrumb"> <a href="#" title="Retouner vers Reactifs" class="tip-bottom"><i class="icon-home"></i> Reactifs</a> <a href="#" class="current">Reactifs N°: {{$users}}</a> </div>
+    <h1>Reactifs N°: {{$users}}</h1>
+
+    {{-- $article->user->user_name   --}}
+
   </div>
   <div class="container-fluid">
     <hr>

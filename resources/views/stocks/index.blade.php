@@ -11,7 +11,7 @@
       <div class="span12">
         <div class="widget-box">
           <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
-            <h5>Reactifs</h5>
+            <h5>Reactifs |<a style="color: green;" href="{{('/reactifs')}}">Voire + de Reactifs</a></h5>
           </div>
           <div class="widget-content nopadding">
             <table class="table table-bordered table-striped">
@@ -43,18 +43,18 @@
                 
               </tbody>
             </table>
-
-          </div><br />
-        <a href="{{('/reactifs')}}"><i class="icon icon-fullscreen"></i> <span><strong><button class="btn btn-primary">Voire + de Reactifs</button></strong> </span></a></li>
-        </div>
-        <div class="widget-box">
-          <div class="widget-title"> <span class="icon">
-            <input type="checkbox" id="title-checkbox" name="title-checkbox" />
-            </span>
-            <h5>Vaccins</h5>
           </div>
-          <div class="widget-content nopadding">
-            <table class="table table-bordered table-striped with-check">
+        </div>
+      </div>
+
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="widget-box">
+            <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+              <h5>Vaccins |<a style="color: green;" href="{{('#')}}">Voire + de Vaccins</a></h5>
+            </div>
+            <div class="widget-content nopadding">
+              <table class="table table-bordered table-striped with-check">
               <thead>
                 <tr>
                   <th>ID</th>
@@ -88,16 +88,62 @@
                 @endforeach
               </tbody>
             </table>
+            </div>
           </div>
-                  <a href="{{('/reactifs')}}"><i class="icon icon-fullscreen"></i> <span><strong><button class="btn btn-primary">Voire + de Vaccins</button></strong> </span></a></li>
         </div>
-        <div class="widget-box">
-          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
-            <h5>Substances Pures</h5>
-            <span class="label label-info">Substances</span> </div>
-          <div class="widget-content nopadding">
-            <table class="table table-bordered table-striped">
-              <thead>
+      </div>
+
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="widget-box">
+            <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+              <h5>Echantillons |<a style="color: green;" href="{{('/admin/voir-echantillon')}}">Voire + d'Echantillons</a></h5>
+            </div>
+            <div class="widget-content nopadding">
+                <table class="table table-bordered table-striped with-check">
+                  <thead>
+                <tr>
+                  <th><strong>ID</strong></th>
+                  <th><strong>Date Reçu</strong></th>
+                  <th><strong>Nom Produit</strong></th>
+                  <th><strong>Forme Galenique</strong></th>
+                  <th><strong>Quantité Reçu</strong></th>
+                  <th><strong>Quantité Livrée</strong></th>
+                  <th><strong>Nom fournisseur</strong></th>
+                  <th><strong>Date fabrication</strong></th>
+                  <th><strong>Date Péremption</strong></th>
+                </tr>
+              </thead>
+              <tbody>
+                	@foreach($echantillons as $echantillon)
+                <tr class="gradeU">
+                  <td>{{ $echantillon->id }}</td>
+                  <td>{{ $echantillon->dateRecu }}</td>
+                  <td>{{ $echantillon->nomProduit }}</td>
+                  <td>{{ $echantillon->formeGalenique }}</td>
+                  <td>{{ $echantillon->quantiteRecu }}</td>
+                  <td>{{ $echantillon->quantiteLivree }}</td>
+                  <td>{{ $echantillon->fournisseur }}</td>
+                  <td>{{ $echantillon->dateFab }}</td>
+                  <td>{{ $echantillon->dateExp }}</td>
+                </tr>
+                @endforeach
+              </tbody>
+                </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="widget-box">
+            <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+              <h5>Substances de references |<a style="color: green;" href="{{('/substances')}}">Voire + Substances</a></h5>
+            </div>
+            <div class="widget-content nopadding">
+              <table class="table table-bordered table-striped with-check">
+                <thead>
                 <tr>
                   <th>ID</th>
                   <th>Designation</th>
@@ -121,72 +167,19 @@
                   </tr>
               @endforeach
               </tbody>
-            </table>
-          </div>
-                  <a href="{{('/substances')}}"><i class="icon icon-fullscreen"></i> <span><strong><button class="btn btn-primary">Voire + de Substances</button></strong> </span></a></li>
-        </div>
-
-        <div class="widget-box">
-          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
-            <h5>Echantillons</h5>
-            <span class="label label-info">Featured</span> </div>
-          <div class="widget-content ">
-            <table class="table table-bordered table-striped with-check">
-              <thead>
-                <tr>
-                  <th><input type="checkbox" id="title-table-checkbox" name="title-table-checkbox" /></th>
-                  <th>Column name</th>
-                  <th>Column name</th>
-                  <th>Column name</th>
-                  <th>Column name</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><input type="checkbox" /></td>
-                  <td>Row 1</td>
-                  <td>Row 2</td>
-                  <td>Row 3</td>
-                  <td>Row 4</td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" /></td>
-                  <td>Row 1</td>
-                  <td>Row 2</td>
-                  <td>Row 3</td>
-                  <td>Row 4</td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" /></td>
-                  <td>Row 1</td>
-                  <td>Row 2</td>
-                  <td>Row 3</td>
-                  <td>Row 4</td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" /></td>
-                  <td>Row 1</td>
-                  <td>Row 2</td>
-                  <td>Row 3</td>
-                  <td>Row 4</td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" /></td>
-                  <td>Row 1</td>
-                  <td>Row 2</td>
-                  <td>Row 3</td>
-                  <td>Row 4</td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" /></td>
-                  <td>Row 1</td>
-                  <td>Row 2</td>
-                  <td>Row 3</td>
-                  <td>Row 4</td>
-                </tr>
-              </tbody>
-            </table>
+              </table>
+            </div>
           </div>
         </div>
+      </div>
 
-        @endsection
+
+
+
+
+
+    </div>
+  </div>
+
+
+@endsection
