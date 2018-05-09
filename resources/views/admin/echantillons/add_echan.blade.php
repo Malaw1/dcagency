@@ -33,6 +33,17 @@
 												</div>
 											</div>
 											<div class="form-group ">
+												<label class="control-label col-sm-2 requiredField" for="select1">
+													Nom client
+													<span class="asteriskField">
+														*
+													</span>
+												</label>
+												<div class="col-sm-4">
+									                <input class="form-control" type="text" placeholder="Type here for auto complete…" data-provide="typeahead" data-items="4" data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Ahmedabad&quot;,&quot;India&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]" class="span11">
+									              </div>
+											</div>
+											<div class="form-group ">
 												<label class="control-label col-sm-2 requiredField" for="nomProduit">
 													Nom
 													<span class="asteriskField">
@@ -101,6 +112,9 @@
 											<div class="form-group ">
 												<label class="control-label col-sm-2" for="dateExp">
 													Date p&eacute;remption
+													<span class="asteriskField">
+														*
+													</span>
 												</label>
 												<div class="col-sm-4">
 													<input class="form-control" id="dateExp" name="dateExp" placeholder="MM/DD/YYYY" type="date"/>
