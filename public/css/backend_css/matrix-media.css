@@ -1,20 +1,21 @@
 body {
-	background:#2E363F;
+	background:#004d00;
 }
 
 #header {
-	background-color: #1f262d;
+	background-color: #004d00;
    margin-top:10px;
 }
+
 #search input[type=text], #search button {
-	background-color: #28b779;
+	background-color: #27a9e3;
 }
 #search input[type=text]:focus {
 	color: #777777;
 }
-#sidebar > ul{border-bottom: 1px solid #37414b}
+#sidebar > ul{border-bottom: 2px solid #fff}
 #sidebar > ul > li {
-	border-top: 1px solid #37414b; border-bottom: 1px solid #1f262d;
+	border-top: 2px solid #fff; border-bottom: 1px solid #1f262d;
 }
 #sidebar > ul > li.active {
     background-color: #27a9e3; border-bottom: 1px solid #27a9e3;  border-top: 1px solid #27a9e3;
@@ -38,10 +39,10 @@ body {
 
 
 #search input[type=text] {
-	background-color: #47515b; color: #fff; 
+	background-color: #fff; color: #fff; 
 }
 #search input[type=text]:focus {
-	color: #2e363f; color: #fff; box-shadow:none;
+	color: #2e363f; color: #004d00; box-shadow:none;
 }
 .dropdown-menu li a:hover, .dropdown-menu .active a, .dropdown-menu .active a:hover {
     color: #eeeeee;

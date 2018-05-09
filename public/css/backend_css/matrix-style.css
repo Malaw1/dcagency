@@ -9,7 +9,7 @@ html, body{height:100%}
 
 body {
 	overflow-x: hidden;
-	margin-top: -10px; font-family: 'Open Sans', sans-serif; font-size:12px; color:#666;
+	margin-top: -10px; font-family: 'Open Sans', sans-serif; font-size:12px; color:;
 }
 a{color:#666;}
 a:hover, a:focus {
@@ -102,14 +102,14 @@ hr{ border-top-color:#dadada;}
 #user-nav > ul {
 	margin: 0;
 	padding: 0;
-	list-style: none; border-right: 1px solid #2e363f;border-left: 1px solid #000;
+	list-style: none; border-right: 2px solid #fff;border-left: 0px solid #fff;
 }
 #user-nav > ul > li {
 	float: left;
 	list-style-type: none;
 	margin: 0;
 	position: relative;
-	padding: 0; border-left: 1px solid #2e363f; border-right: 1px solid #000;
+	padding: 0; border-left: 2px solid #fff; border-right: 0px solid #fff;
 }
 #user-nav > ul > li > a {
 	padding:9px 10px;
@@ -117,7 +117,7 @@ hr{ border-top-color:#dadada;}
 	font-size: 11px;
 }
 #user-nav > ul > li > a:hover, #user-nav > ul > li.open > a {
-	color: #ffffff;  background:#000;
+	color: #fff;  background:#27a9e3;
 }
 #user-nav > ul > li > a > i, #sidebar li a i {
 	opacity: .5; 
@@ -144,6 +144,7 @@ hr{ border-top-color:#dadada;}
 	position: relative;
 	width: 220px;
 	z-index: 16;
+	background-color: #1aff1a;
 }
 #sidebar > ul {
 	list-style: none;
@@ -159,7 +160,7 @@ hr{ border-top-color:#dadada;}
 #sidebar > ul > li > a {
 	padding: 10px 0 10px 15px;
 	display: block;
-	color: #939da8;
+	color: #fff;
 }
 #sidebar > ul > li > a > i {
 	margin-right: 10px;
@@ -184,7 +185,7 @@ hr{ border-top-color:#dadada;}
 #sidebar > ul li ul li a {
 	padding: 10px 0 10px 25px;
 	display: block;
-	color: #777777;
+	color: #1aff1a;
 }
 #sidebar > ul li ul li:first-child a {
 	border-top: 0;
