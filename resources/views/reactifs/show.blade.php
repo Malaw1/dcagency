@@ -4,11 +4,8 @@
 
 <div id="content">
     <div id="content-header">
-    <div id="breadcrumb"> <a href="#" title="Retouner vers Reactifs" class="tip-bottom"><i class="icon-home"></i> Reactifs</a> <a href="#" class="current">Reactifs N°: {{$users}}</a> </div>
-    <h1>Reactifs N°: {{$users}}</h1>
-
-    {{-- $article->user->user_name   --}}
-
+    <div id="breadcrumb"> <a href="#" title="Retouner vers Reactifs" class="tip-bottom"><i class="icon-home"></i> Reactifs</a> <a href="#" class="current">Reactifs N°: {{$react}}</a> </div>
+    <h1>Reactifs N°: {{$react}}</h1>
   </div>
   <div class="container-fluid">
     <hr>
