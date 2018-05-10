@@ -4,66 +4,180 @@
 
 <div id="content">
     <div id="content-header">
-    <div id="breadcrumb"> <a href="#" title="Retouner vers Reactifs" class="tip-bottom"><i class="icon-home"></i> Reactifs</a> <a href="#" class="current">Reactifs N°: {{$react}}</a> </div>
-    <h1>Reactifs N°: {{$react}}</h1>
+    <div id="breadcrumb"> <a href="#" title="Retouner vers Reactifs" class="tip-bottom"><i class="icon-home"></i> Reactifs</a> <a href="#" class="current">Reactifs N°: </a> </div>
+    @foreach ($react as $react )
+            <input type="hidden" value="{{$react}}" />
+            @endforeach
+    <h1>{{$react->designation}}</h1>
   </div>
-  <div class="container-fluid">
-    <hr>
+  <div class="container-fluid"><hr>
     <div class="row-fluid">
       <div class="span12">
         <div class="widget-box">
-          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
-            <h5>Static table</h5>
+          <div class="widget-title"> <span class="icon"> <i class="icon-briefcase"></i> </span>
+            <h5 >Fiche Scientifique</h5>
           </div>
-          <div class="widget-content nopadding">
-            <table class="table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>Rendering engine</th>
-                  <th>Browser</th>
-                  <th>Platform(s)</th>
-                  <th>Engine version</th>
-                  <th>CSS grade</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="odd gradeX">
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 4.0</td>
-                  <td>Win 95+</td>
-                  <td class="center"> 4</td>
-                  <td class="center">X</td>
-                </tr>
-                <tr class="even gradeC">
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 5.0</td>
-                  <td>Win 95+</td>
-                  <td class="center">5</td>
-                  <td class="center">C</td>
-                </tr>
-                <tr class="odd gradeA">
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 5.5</td>
-                  <td>Win 95+</td>
-                  <td class="center">5.5</td>
-                  <td class="center">A</td>
-                </tr>
-                <tr class="even gradeA">
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 6</td>
-                  <td>Win 98+</td>
-                  <td class="center">6</td>
-                  <td class="center">A</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="widget-content">
+            <div class="row-fluid">
+              <div class="span6">
+                <table class="">
+                  <tbody>
+                    <tr>
+                      <td><h4>Stock</h4></td>
+                    </tr>
+                    <tr>
+                      <td>Conditionnement</td>
+                    </tr>
+                    <tr>
+                      <td>Lot</td>
+                    </tr>
+                    <tr>
+                      <td>Fabricant</td>
+                    </tr>
+                    <tr>
+                      <td >Quantite</td>
+                    </tr>
+                    <tr>
+                      <td >Date de Fabricantion</td>
+                    </tr>
+                    <tr>
+                      <td >Date de Peremption</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="span6">
+                <table class="table table-bordered table-invoice">
+                  <tbody>
+                  <thead>
+                      <td><strong>Proprietes Chimiques</strong></td>
+                  </thead>
+                    <tr>
+                        <tr>
+                          <td class="width30">Temps de Fusion</td>
+                          <td class="width70"><strong>TD-6546</strong></td>
+                        </tr>
+                        <tr>
+                          <td>Temps d'ebulution</td>
+                          <td><strong>March 23, 2013</strong></td>
+                        </tr>
+                        <tr>
+                          <td>Solubilite</td>
+                          <td><strong>April 01, 2013</strong></td>
+                        </tr>
+
+                        <tr>
+                          <td>Parametre de Solubilite</td>
+                          <td><strong>April 01, 2013</strong></td>
+                        </tr>
+                        <tr>
+                          <td>Masse volumique</td>
+                          <td><strong>April 01, 2013</strong></td>
+                        </tr>
+                        <tr>
+                          <td>Temps d'auto inflamation</td>
+                          <td><strong>April 01, 2013</strong></td>
+                        </tr>
+                        <tr>
+                          <td>Point Ecart</td>
+                          <td><strong>April 01, 2013</strong></td>
+                        </tr>
+                        <tr>
+                          <td>Limite d'Explosivite dans l'air</td>
+                          <td><strong>April 01, 2013</strong></td>
+                        </tr>
+                        <tr>
+                          <td>Pression Vapeur Saturante</td>
+                          <td><strong>April 01, 2013</strong></td>
+                        </tr>
+                        <tr>
+                          <td>Viscosite Dynamique</td>
+                          <td><strong>April 01, 2013</strong></td>
+                        </tr>
+                        <tr>
+                          <td>Point Critique</td>
+                          <td><strong>April 01, 2013</strong></td>
+                        </tr>
+                    </tr>
+                    </tbody>
+                  
+                </table>
+              </div>
+            </div>
+            <div class="row-fluid">
+              <div class="span12">
+                <table class="table table-bordered table-invoice-full">
+                  <thead>
+                    <tr>
+                      <th class="head0">Type</th>
+                      <th class="head1">Desc</th>
+                      <th class="head0 right">Qty</th>
+                      <th class="head1 right">Price</th>
+                      <th class="head0 right">Amount</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Firefox</td>
+                      <td>Ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae</td>
+                      <td class="right">2</td>
+                      <td class="right">$150</td>
+                      <td class="right"><strong>$300</strong></td>
+                    </tr>
+                    <tr>
+                      <td>Chrome Plugin</td>
+                      <td>Tro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt u eos et accusamus et iusto odio dignissimos ducimus  deleniti atque</td>
+                      <td class="right">1</td>
+                      <td class="right">$1,200</td>
+                      <td class="right"><strong>$1,2000</strong></td>
+                    </tr>
+                    <tr>
+                      <td>Safari App</td>
+                      <td>Rro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt u expedita distinctio</td>
+                      <td class="right">2</td>
+                      <td class="right">$850</td>
+                      <td class="right"><strong>$1,700</strong></td>
+                    </tr>
+                    <tr>
+                      <td>Opera App</td>
+                      <td>Orro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut</td>
+                      <td class="right">3</td>
+                      <td class="right">$850</td>
+                      <td class="right"><strong>$2,550</strong></td>
+                    </tr>
+                    <tr>
+                      <td>Netscape Template</td>
+                      <td>Vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</td>
+                      <td class="right">5</td>
+                      <td class="right">$50</td>
+                      <td class="right"><strong>$250</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="table table-bordered table-invoice-full">
+                  <tbody>
+                    <tr>
+                      <td class="msg-invoice" width="85%"><h4>Payment method: </h4>
+                        <a href="#" class="tip-bottom" title="Wire Transfer">Wire transfer</a> |  <a href="#" class="tip-bottom" title="Bank account">Bank account #</a> |  <a href="#" class="tip-bottom" title="SWIFT code">SWIFT code </a>|  <a href="#" class="tip-bottom" title="IBAN Billing address">IBAN Billing address </a></td>
+                      <td class="right"><strong>Subtotal</strong> <br>
+                        <strong>Tax (5%)</strong> <br>
+                        <strong>Discount</strong></td>
+                      <td class="right"><strong>$7,000 <br>
+                        $600 <br>
+                        $50</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="pull-right">
+                  <h4><span>Amount Due:</span> $7,650.00</h4>
+                  <br>
+                  <a class="btn btn-primary btn-large pull-right" href="">Pay Invoice</a> </div>
+              </div>
+            </div>
           </div>
         </div>
-</div>
-
+      </div>
+    </div>
+  </div>
 
 @endsection
