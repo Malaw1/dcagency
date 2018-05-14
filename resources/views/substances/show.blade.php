@@ -4,7 +4,7 @@
 <div id="content">
     <div id="content-header">
     <div id="breadcrumb"> <a href="#" title="Retouner vers Reactifs" class="tip-bottom"><i class="icon-home"></i> Reactifs</a> <a href="#" class="current">Reactifs N°: {{$reactif->id}}</a> </div>
-    <h1>Reactifs N°: {{$reactif->id}}</h1>
+    <h1>Reactifs N°: {{$substance->id}}</h1>
   </div>
   <div class="container-fluid">
     <hr>

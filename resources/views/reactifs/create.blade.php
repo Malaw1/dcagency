@@ -35,9 +35,13 @@
                 </div>
                 </div>
                 <div class="control-group">
-                <label class="control-label">Fabriquant :</label>
+
+                <label class="control-label">Fabricant :</label>
                 <div class="controls">
-                    <input type="text" class="span11 form-control" required placeholder="fabriquant" name="fabriquant" spellcheck="false"  />
+                    <input placeholder="Fabricant" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[]" class="span11" type="text">                    
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+  Launch demo modal
+</button>
                 </div>
                 </div>
                 <div class="control-group">
@@ -86,4 +90,36 @@
     </div>
 </div>
 
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div class="control-group">
+                <label class="control-label">Nombre Utilise :</label>
+                <div class="controls">
+                    <input type="number" class="form-control" required placeholder="Quantite Utilise" value="0" name="quantiteUtilise" spellcheck="false" />
+                </div>
+                </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+        
 @endsection
