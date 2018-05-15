@@ -70,11 +70,11 @@ class ReactifsController extends Controller
         $react = Reactif::join('proprietesphysiques', 'reactifs.id', '=', 'proprietesphysiques.reactifs_id')
             ->join('proprieteschimiques', 'proprieteschimiques.id', '=', 'proprieteschimiques.reactifs_id')
             ->select('reactifs.*', 'proprietesphysiques.*', 'proprieteschimiques.*')
-            // ->where('id', $reactif->id)
+             ->where('reactifs.id', $reactif->id)
             ->get();
-            
+            dd($react);
             return view('reactifs.show', ['react' => $react]);
-            dd($users);
+            
     }
 
     /**

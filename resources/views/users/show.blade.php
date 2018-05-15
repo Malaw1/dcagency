@@ -4,24 +4,26 @@
 <div id="content">
   <div id="content-header">
     <div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a> <a href="#">Addons pages</a> <a href="#" class="current">invoice</a> </div>
-    <h1>Invoice</h1>
+    <h1>Fiche Personnelle</h1>
   </div>
   <div class="container-fluid"><hr>
     <div class="row-fluid">
       <div class="span12">
         <div class="widget-box">
           <div class="widget-title"> <span class="icon"> <i class="icon-briefcase"></i> </span>
-          @foreach ($users as $users )
-            <h5 >{{$users->id}}</h5>
-            @endforeach
+         
           </div>
           <div class="widget-content">
             <div class="row-fluid">
               <div class="span6">
                 <table class="">
                   <tbody>
+                  @foreach ($users as $users)
+                      {{ $users->id }}
+                  @endforeach
+                  <h2>{{$users[0]}}</h2>
                     <tr>
-                      <td><h4>Your Company Name</h4></td>
+                      <td><h4></h4></td>
                     </tr>
                     <tr>
                       <td>Your Town</td>
