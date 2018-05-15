@@ -54,10 +54,6 @@
   $(this).parent().addClass("active");
 });
 </script>
-<<<<<<< HEAD
-=======
-
->>>>>>> 7198e78f99167e23a5f35b1093ab0093a56d3ff6
 
 {{-- <script type="text/javascript">
     $(document).ready(function () {
@@ -67,13 +63,4 @@
              return this.href == url;
         }).parent().addClass('active');
     });
-<<<<<<< HEAD
 </script>  --}}
-=======
-
-</script>  --}}
-
-</script> 
-
-
->>>>>>> 7198e78f99167e23a5f35b1093ab0093a56d3ff6
