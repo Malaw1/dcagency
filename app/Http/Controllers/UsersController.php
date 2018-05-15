@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\User;
 use App\Unite;
@@ -10,21 +9,16 @@ use App\Poste;
 class UsersController extends Controller
 {
     public function index()
-    {
-        // $user = 
-        // User
-        //   ::join('postes', 'postes.user_id', '=', 'users.id')
-        //   ->where('postes.id', 'LIKE', '%1%')
-        //   ->first(); 
-        //   dd($user);
+    {        
+        $users = Poste::join('users', 'users.poste_id', '=', 'users.id')->select('users.*', 'postes.*')->get();
+        //dd($poste);
 
-//         $user = 
-//   User
-//     ::join('posts', 'posts.user_id', '=', 'users.id')
-//     ->where('posts.name', 'LIKE', '%jp%')
-//     ->select('users.*')
-//     ->first(); 
+<<<<<<< HEAD
+        //$unites = Unite::all();
+        return view('users.listeperso', compact('users'));
 
+        //return view('/users/listeperso', ['users' => $users]);
+=======
         //   $users = Poste::join('users', 'users.poste_id', '=', 'postes.id')->select('users.*', 'postes.*')->get();
         //   //dd($users);
         // //$unites = Unite::all();
@@ -46,5 +40,6 @@ class UsersController extends Controller
         $users = User::Where('id', $users->id)->get();
         dd($users);
         return view('users.show', ['users'=>$users]);
+>>>>>>> 87eca860d9eb9e68bf12a3f0b42535c6438ee83d
     }
 }

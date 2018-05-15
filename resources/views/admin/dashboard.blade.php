@@ -19,8 +19,8 @@
                  google.charts.setOnLoadCallback(drawChart);
                  function drawChart() {
                  var data = google.visualization.arrayToDataTable([
-                  ['Nombre', 'Hours per Day'],
-                  ['Work',     11],
+                  ['Enregistrement', 'Hours per Day'],
+                  ['',     11],
                   ['Status',      2],
                   ['Commute',  2],
                   ['Watch TV', 2],
