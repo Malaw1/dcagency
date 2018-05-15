@@ -3,8 +3,17 @@
  <script src="script.js"></script>
 
 <div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
+<<<<<<< HEAD
   <ul class="nav nav-sidebar">
     <li class="##"><a href="{{('../admin/dashboard')}}"><i class="icon icon-home" style="font-size: 24px;color:  #fff"></i> <span> <strong>Accueil</strong> </span></a> </li>
+=======
+
+  <ul class="nav nav-sidebar">
+    <li class="#"><a href="{{('../admin/dashboard')}}"><i class="icon icon-home" style="font-size: 24px;color:  #fff"></i> <span> <strong>Accueil</strong> </span></a> </li>
+
+  <ul class="nav navbar">
+    <li><a href="{{('../admin/dashboard')}}"><i class="icon icon-home" style="font-size: 24px;color:  #fff"></i> <span> <strong>Accueil</strong> </span></a> </li>
+>>>>>>> 7198e78f99167e23a5f35b1093ab0093a56d3ff6
     <li class="submenu"> <a href="#"><i class="icon icon-beaker" style="font-size: 24px;color:  #fff"></i> <span><strong>Echantillons</strong> </span> <span class="label label-important">2</span> </a> 
      <ul>
         <li><a href="{{ url('/admin/add-echantillon') }}">Ajouter échantillons</a></li>
@@ -53,6 +62,10 @@
   $(this).parent().addClass("active");
 });
 </script>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7198e78f99167e23a5f35b1093ab0093a56d3ff6
 
 {{-- <script type="text/javascript">
     $(document).ready(function () {
@@ -62,4 +75,13 @@
              return this.href == url;
         }).parent().addClass('active');
     });
+<<<<<<< HEAD
 </script>  --}}
+=======
+
+</script>  --}}
+
+</script> 
+
+
+>>>>>>> 7198e78f99167e23a5f35b1093ab0093a56d3ff6
