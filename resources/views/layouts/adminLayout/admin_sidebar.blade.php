@@ -1,7 +1,10 @@
 <!--sidebar-menu-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+ <script src="script.js"></script>
+
 <div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
-  <ul>
-    <li class="active"><a href="{{('../admin/dashboard')}}"><i class="icon icon-home" style="font-size: 24px;color:  #fff"></i> <span> <strong>Accueil</strong> </span></a> </li>
+  <ul class="nav nav-sidebar">
+    <li class="#"><a href="{{('../admin/dashboard')}}"><i class="icon icon-home" style="font-size: 24px;color:  #fff"></i> <span> <strong>Accueil</strong> </span></a> </li>
     <li class="submenu"> <a href="#"><i class="icon icon-beaker" style="font-size: 24px;color:  #fff"></i> <span><strong>Echantillons</strong> </span> <span class="label label-important">2</span> </a> 
      <ul>
         <li><a href="{{ url('/admin/add-echantillon') }}">Ajouter échantillons</a></li>
@@ -36,3 +39,9 @@
 </div>
 
 <!--sidebar-menu-->
+<script>
+  $(".nav a").on("click", function() {
+  $(".nav").find(".active").removeClass("active");
+  $(this).parent().addClass("active");
+});
+</script>
