@@ -72,7 +72,7 @@ class ReactifsController extends Controller
             ->select('reactifs.*', 'proprietesphysiques.*', 'proprieteschimiques.*')
              ->where('reactifs.id', $reactif->id)
             ->get();
-            dd($react);
+            //dd($react);
             return view('reactifs.show', ['react' => $react]);
             
     }

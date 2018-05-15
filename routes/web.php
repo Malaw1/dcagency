@@ -23,7 +23,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['middleware' =>['auth']],function(){
-
+	Route::get('/admin/progress', 'AdminController@progress');
 	Route::get('/admin/dashboard', 'AdminController@dashboard');
 	Route::get('/admin/settings', 'AdminController@settings');
 	Route::get('/admin/check-pwd', 'AdminController@chkPassword');
@@ -43,6 +43,7 @@ Route::get('/logout', 'AdminController@logout');
 Route::get('/stocks', 'StocksController@index');
 Route::get('/users/listeperso', 'UsersController@index');
 Route::get('/substances', 'SubstancespuresController@index');
+Route::get('analyses/comprime', 'AnalysesController@addComp');
 
 Route::get('/logout', 'AdminController@logout');
 Route::resource('stocks', 'StocksController');
@@ -52,3 +53,4 @@ Route::resource('substancespures', 'SubstancespuresController');
 Route::resource('vaccins', 'VaccinsController');
 Route::resource('users', 'UsersController');
 Route::resource('unite', 'UnitesController');
+Route::resource('analyses', 'AnalysesController');

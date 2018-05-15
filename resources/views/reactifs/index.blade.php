@@ -4,13 +4,13 @@
 <div id="content">
   <div id="content-header">
     <div id="breadcrumb"> <a href="/stocks" title="Go to Stocks" class="tip-bottom"><i class="icon-home"></i> Stocks</a> <a href="#" class="current">Reactifs</a> </div>
-    <h1>Gestion des Substances Reactifs</h1>
+    <h1>Gestion des Substances Pures</h1>
   </div>
   
   <div class="container-fluid">
 
   <div class="fr">
-      <a href="/reactifs/create" class="btn btn-primary btn-large">Ajouter Reactif +</a>
+      <a href="/reactifs/create" class="btn btn-primary btn-large">Ajouter +</a>
   </div>
 
     <div class="row-fluid">

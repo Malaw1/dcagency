@@ -6,9 +6,16 @@
      <ul>
         <li><a href="{{ url('/admin/add-echantillon') }}">Ajouter échantillons</a></li>
         <li><a href="{{ url('/admin/voir-echantillon') }}">Consulter échantillons</a></li>
+        <li><a href="#">Etudes de Faisabilité</a></li>
       </ul> 
     </li>
-    <li> <a href="#"><i class="icon icon-stethoscope" style="font-size: 24px;color:  #fff"></i> <span><strong>Analyses &amp; Tests</strong> </span></a> </li>
+    <li class="submenu"> <a href="#"><i class="icon icon-stethoscope" style="font-size: 24px;color:  #fff"></i> <span><strong>Analyses &amp; Tests</strong> </span></a> 
+        <ul>
+        <li><a href="/analyses/"><strong>Analyses</strong> </a></li>
+        <li><a href="/tests/">Tests</a></li>
+        <li><a href="/methodes/">Methodes</a></li>
+      </ul>
+    </li>
     <li><a href="#"><i class="icon icon-cogs" style="font-size: 24px;color:  #fff"></i> <span><strong>Equipements</strong> </span></a></li>
     <li><a href="{{('/stocks')}}"><i class="icon icon-fullscreen" style="font-size: 24px;color:  #fff"></i> <span><strong>Stock &amp; Fournisseur</strong> </span></a></li>
     <li class="submenu"><a href="#"><i class="icon icon-group" style="font-size: 24px;color:  #fff"></i> <span><strong>Utilisateurs &amp; Personnel</strong> 
@@ -37,7 +44,7 @@
 
 <!--sidebar-menu-->
 
-<script type="text/javascript">
+{{-- <script type="text/javascript">
     $(document).ready(function () {
         var url = window.location;
         $('ul.nav a[href="'+ url +'"]').parent().addClass('active');
@@ -45,4 +52,4 @@
              return this.href == url;
         }).parent().addClass('active');
     });
-</script> 
+</script>  --}}

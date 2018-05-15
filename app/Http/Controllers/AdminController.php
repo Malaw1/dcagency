@@ -39,6 +39,10 @@ class AdminController extends Controller
     public function settings(){
         return view('admin.settings');
          }
+
+         public function progress(){
+            return view('admin.progress');
+             }
     
     public function chkPassword(Request $request){
         $data = $request->all();

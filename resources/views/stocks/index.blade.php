@@ -11,7 +11,7 @@
       <div class="span12">
         <div class="widget-box">
           <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
-            <h5>Reactifs |<a style="color: green;" href="{{('/reactifs')}}">Voire + de Reactifs</a></h5>
+            <h5>Substances de references |<a style="color: green;" href="{{('/reactifs')}}">Voire + de Substances</a></h5>
           </div>
           <div class="widget-content nopadding">
             <table class="table table-bordered table-striped">
@@ -139,7 +139,7 @@
         <div class="span12">
           <div class="widget-box">
             <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
-              <h5>Substances de references |<a style="color: green;" href="{{('/substances')}}">Voire + Substances</a></h5>
+              <h5>Matieres Premieres |<a style="color: green;" href="{{('/substances')}}">Voire + </a></h5>
             </div>
             <div class="widget-content nopadding">
               <table class="table table-bordered table-striped with-check">
