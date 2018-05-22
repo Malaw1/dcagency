@@ -55,3 +55,4 @@ Route::resource('users', 'UsersController');
 Route::resource('unite', 'UnitesController');
 Route::resource('analyses', 'AnalysesController');
 Route::resource('reception', 'ReceptionController');
+Route::resource('equipements', 'EquipementsController');

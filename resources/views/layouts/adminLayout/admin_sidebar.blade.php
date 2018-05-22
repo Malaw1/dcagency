@@ -5,7 +5,7 @@
 <div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
   <ul class="nav nav-sidebar">
     <li class="##"><a href="{{('../admin/dashboard')}}"><i class="icon icon-home" style="font-size: 24px;color:  #fff"></i> <span> <strong>Accueil</strong> </span></a> </li>
-    <li class="##"><a href="{{('../reception/')}}"><i class="icon icon-home" style="font-size: 24px;color:  #fff"></i> <span> <strong>Reception</strong> </span></a> </li>
+    <li class="##"><a href="{{('../reception/')}}"><i class="icon icon-save" style="font-size: 24px;color:  #fff"></i> <span> <strong>Reception</strong> </span></a> </li>
     <li class="submenu"> <a href="#"><i class="icon icon-beaker" style="font-size: 24px;color:  #fff"></i> <span><strong>Echantillons</strong> </span> <span class="label label-important">2</span> </a> 
      <ul>
         <li><a href="{{ url('/admin/add-echantillon') }}">Ajouter échantillons</a></li>
@@ -20,7 +20,7 @@
         <li><a href="/methodes/">Methodes</a></li>
       </ul>
     </li>
-    <li><a href="#"><i class="icon icon-cogs" style="font-size: 24px;color:  #fff"></i> <span><strong>Equipements</strong> </span></a></li>
+    <li><a href="/equipements/"><i class="icon icon-cogs" style="font-size: 24px;color:  #fff"></i> <span><strong>Equipements</strong> </span></a></li>
     <li><a href="{{('/stocks')}}"><i class="icon icon-fullscreen" style="font-size: 24px;color:  #fff"></i> <span><strong>Stock &amp; Fournisseur</strong> </span></a></li>
     <li class="submenu"><a href="#"><i class="icon icon-group" style="font-size: 24px;color:  #fff"></i> <span><strong>Utilisateurs &amp; Personnel</strong> 
       <ul>

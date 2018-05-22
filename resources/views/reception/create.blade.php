@@ -17,9 +17,7 @@
                             <label class="control-label">Client :</label>
                             <div class="controls">
                                 <input placeholder="Client" name="client" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[]" class="span6" type="text">                    
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-                                Nouveau Client
-                                </button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Nouveau Client</button>
                             </div>
                             <div class="control-group">
                                 <label class="control-label">Date Reception :</label>

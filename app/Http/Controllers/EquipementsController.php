@@ -14,7 +14,9 @@ class EquipementsController extends Controller
      */
     public function index()
     {
-        //
+        $equip = Equipement::All();
+
+        return view('equipements.index', ['equip' => $equip]);
     }
 
     /**
@@ -24,7 +26,7 @@ class EquipementsController extends Controller
      */
     public function create()
     {
-        //
+        return view('equipements.create');
     }
 
     /**
@@ -35,7 +37,22 @@ class EquipementsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $addequip = Equipement::create([
+            'appareil' => $request->input('appareil'),
+            'marque' => $request->input('marque'),
+            'modele' => $request->input('modele'),
+            'serie' => $request->input('serie'),
+            'anneAcquis' => $request->input('anneAcquis'),
+            'societeContacter' => $request->input('societeContacter'),
+            'echelle' => $request->input('echelle'),
+            'precision' => $request->input('precision'),
+            'code' => $request->input('code'),
+
+        ]);
+
+        if($addequip){
+            return redirect()->route('equipements.index', ['equipements' => $addequip->id])->with('success', 'Reactif modifié avec succés');
+        }
     }
 
     /**
@@ -44,9 +61,31 @@ class EquipementsController extends Controller
      * @param  \App\Equipement  $equipement
      * @return \Illuminate\Http\Response
      */
-    public function show(Equipement $equipement)
+    public function show(Equipement $equip)
     {
-        //
+        // $equip = Equipement::join('users', 'users.id', '=', 'equipements.user_id')
+        //     ->join('qualifications', 'equipements.id', '=', 'qualifications.equip_id')
+        //     ->select('qualifications.*', 'equipements.*', 'users.*')
+        //     ->where('equipements.id', $equip->id)
+        //     ->first();
+
+            //  $equip = Equipement::join('qualifications', 'qualifications.equip_id', '=', 'equipements.id')
+            //  ->select('qualifications.*', 'equipements.*')
+            //  ->where('equipements.id', $equip->id)
+            //  ->first();
+
+             $equip = Equipement::join('qualifications', 'equipements.id', '=', 'qualifications.equip_id')
+             ->join('users', 'users.id', '=', 'equipements.user_id')
+             ->select('users.*', 'equipements.*', 'qualifications.*')
+              ->where('equipements.id', $equip->id)
+             ->get();
+             dd($equip);
+
+            //  return view('reactifs.show', ['react' => $react]);
+
+            // dd($equip);
+            //return view('reactifs.show', ['react' => $react]);
+        return view('equipements.show', ['equip' => $equip]);
     }
 
     /**

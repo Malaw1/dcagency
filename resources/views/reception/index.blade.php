@@ -29,14 +29,14 @@
                 </tr>
               </thead>
               <tbody>
-              {{-- @foreach ($recep as $recep)
+              @foreach ($recep as $recep)
                 <tr class="odd gradeX">
                     <td>{{$recep->id}}</td>
                     <td>{{$recep->name}}</td>
                     <td>{{$recep->dateRecep}}</td>
                     <td>{{$recep->observation}}</td>
                 </tr>
-                @endforeach --}}
+                @endforeach
               </tbody>
             </table>
 
