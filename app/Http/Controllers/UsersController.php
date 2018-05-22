@@ -13,7 +13,12 @@ class UsersController extends Controller
         $users = Poste::join('users', 'users.poste_id', '=', 'users.id')->select('users.*', 'postes.*')->get();
         //dd($poste);
 
-        //$users = Poste::join('users', 'users.poste_id', '=', 'postes.id')->select('users.*', 'postes.*')->get();
+        //$unites = Unite::all();
+        return view('users.listeperso', compact('users'));
+
+        //return view('/users/listeperso', ['users' => $users]);
+
+        //   $users = Poste::join('users', 'users.poste_id', '=', 'postes.id')->select('users.*', 'postes.*')->get();
         //   //dd($users);
         // //$unites = Unite::all();
         // return view('users.listeperso', compact('users'));
@@ -34,5 +39,6 @@ class UsersController extends Controller
         $users = User::Where('id', $users->id)->get();
         dd($users);
         return view('users.show', ['users'=>$users]);
+
     }
 }
