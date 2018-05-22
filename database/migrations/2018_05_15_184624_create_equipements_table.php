@@ -15,17 +15,19 @@ class CreateEquipementsTable extends Migration
     {
         Schema::create('equipements', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('marque');
-            $table->string('modele');
+            $table->string('appareil');
+            $table->string('code');
+            $table->string('fabricant');
+            $table->string('type');
             $table->string('serie');
-            $table->string('anneAcquis');
+            $table->string('dateInstallation');
+            $table->string('etat');
+            $table->string('documentTechDispo');
             $table->string('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->string('societeContacter');
-            $table->string('echelle');
-            $table->string('precision');
-            $table->string('code');
             $table->string('salle');
+            $table->string('commentaires');
             $table->timestamps();
         });
     }
