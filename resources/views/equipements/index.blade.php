@@ -29,14 +29,12 @@
                 <tr>
                     <th>ID. </th>
                     <th>Appareil</th>
-                    <th>Marque</th>
-                    <th>Modele</th>
-                    <th>Serie</th>
-                    <th>Anne Acquises</th>
-                    <th>Societe a Contacter</th>
-                    <th>Echelle</th>
-                    <th>Precision</th>
-                    <th>Salle</th>
+                    <th>Code</th>
+                    <th>Fabricant</th>
+                    <th>Date Prochaine Qualification</th>
+                    <th>Etat</th>
+                    <th>Emplacement</th>
+                    <th>Commentaires</th>
                 </tr>
               </thead>
               <tbody>
@@ -44,14 +42,12 @@
                 <tr class="odd gradeX">
                     <td>{{$equip->id}}</td>
                     <td><a href="/equipements/{{$equip->id}}">{{$equip->appareil}}</a></td>
-                    <td>{{$equip->marque}}</td>
-                    <td>{{$equip->modele}}</td>
-                    <td>{{$equip->serie}}</td>
-                    <td>{{$equip->anneAcquis}}</td>
-                    <td>{{$equip->societeContacter}}</td>
-                    <td>{{$equip->echelle}}</td>
-                    <td>{{$equip->precision}}</td>
+                    <td>{{$equip->code}}</td>
+                    <td>{{$equip->fabricant}}</td>
+                    <td>{{$equip->dateQualification}}</td>
+                    <td>{{$equip->etat}}</td>
                     <td>{{$equip->salle}}</td>
+                    <td>{{$equip->commentaires}}</td>
                 </tr>
                 @endforeach
               </tbody>

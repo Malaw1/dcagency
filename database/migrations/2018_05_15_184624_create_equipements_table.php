@@ -17,17 +17,19 @@ class CreateEquipementsTable extends Migration
             $table->increments('id');
             $table->string('appareil');
             $table->string('code');
-            $table->string('fabricant');
+            $table->string('fabricant')->nullable();
             $table->string('type');
             $table->string('serie');
-            $table->string('dateInstallation');
+            $table->date('dateInstallation');
             $table->string('etat');
-            $table->string('documentTechDispo');
-            $table->string('user_id');
+            $table->string('documentTechDispo')->nullable();
+            $table->string('user_id')->nullable();;
             $table->foreign('user_id')->references('id')->on('users');
-            $table->string('societeContacter');
+            $table->string('societeContacter')->nullable();
+            $table->date('dateQualification')->nullable();
             $table->string('salle');
-            $table->string('commentaires');
+            $table->string('commentaires')->nullable();
+            
             $table->timestamps();
         });
     }
