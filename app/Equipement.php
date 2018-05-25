@@ -9,14 +9,17 @@ class Equipement extends Model
     protected $fillable = [
         'id',
         'appareil',
-        'marque',
-        'modele',
-        'serie',
-        'anneAcquis',
-        'echelle',
-        'societeContacter',
-        'precision',
         'code',
+        'fabricant',
+        'type',
+        'serie',
+        'societeContacter',
+        'dateInstallation',
+        'documentTechDispo',
+        'salle',
+        'commentaires',
+        'dateQualification',
+        'etat'
 
     ];
 }

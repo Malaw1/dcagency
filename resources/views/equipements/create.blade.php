@@ -21,51 +21,76 @@
                                 </div>
                             </div>
                             <div class="control-group">
-                                <label class="control-label">Marque</label>
+                                <label class="control-label">Code</label>
                                 <div class="controls">
-                                    <input type="text" class="span6 form-control" required placeholder="Marque" name="marque" spellcheck="false" />
+                                    <input type="text" class="span6 form-control" required placeholder="Code" name="code" spellcheck="false" />
                                 </div>
                             </div>
                             <div class="control-group">
-                                <label class="control-label">Modele</label>
+                                <label class="control-label">Fabricant</label>
                                 <div class="controls">
-                                    <input type="text" class="span6 form-control" required placeholder="Modele" name="modele" spellcheck="false" />
+                                    <input type="text" class="span6 form-control" required placeholder="Fabricant" name="fabricant" spellcheck="false" />
                                 </div>
                             </div>
                             <div class="control-group">
-                                <label class="control-label">Serie</label>
+                                <label class="control-label">Type</label>
                                 <div class="controls">
-                                    <input type="text" class="span6 form-control" required placeholder="Numero Serie" name="serie" spellcheck="false" />
+                                    <input type="text" class="span6 form-control"  placeholder="Type" name="type" spellcheck="false" />
                                 </div>
                             </div>
                             <div class="control-group">
-                                <label class="control-label">Année d'acquisition</label>
+                                <label class="control-label">Numero de Serie</label>
                                 <div class="controls">
-                                    <input type="text" class="span6 form-control" required placeholder="Annee d'acquisition" name="anneAcquis" spellcheck="false" />
+                                    <input type="text" class="span6 form-control" required placeholder="N° Serie" name="serie" spellcheck="false" />
                                 </div>
                             </div>
                             <div class="control-group">
                                 <label class="control-label">Societe a Contacter</label>
                                 <div class="controls">
-                                    <input type="text" class="span6 form-control" required placeholder="Societer a contacter" name="societeContacter" spellcheck="false" />
+                                    <input type="text" class="span6 form-control"  placeholder="Societer a contacter" name="societeContacter" spellcheck="false" />
                                 </div>
                             </div>
                             <div class="control-group">
-                                <label class="control-label">Echelle</label>
+                                <label class="control-label">Date d'installation</label>
                                 <div class="controls">
-                                    <input type="text" class="span6 form-control" required placeholder="Echelle" name="echelle" spellcheck="false" />
+                                    <input type="date" class="span6 form-control" required placeholder="Date d'installation " name="dateInstallation" spellcheck="false" />
                                 </div>
                             </div>
                             <div class="control-group">
-                                <label class="control-label">Precision</label>
+                                <label class="control-label">Document Technique utilisation disponible</label>
                                 <div class="controls">
-                                    <input type="text" class="span6 form-control" required placeholder="Precision" name="precision" spellcheck="false" />
+                                    <select class="span6" required name="documentTechDispo">
+                                        <option selected>Oui</option>
+                                        <option>Non</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="control-group">
-                                <label class="control-label">Code</label>
+                                <label class="control-label">Fonctionnement</label>
                                 <div class="controls">
-                                    <input type="text" class="span6 form-control" required placeholder="Code" name="code" spellcheck="false" />
+                                    <select class="span6" required name="etat">
+                                        <option selected>Fonctionnel</option>
+                                        <option>Non Fonctionnel</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">Date Prochaine Qualification</label>
+                                <div class="controls">
+                                    <input type="date" class="span6 form-control" placeholder="Emplacement" name="dateQualification" spellcheck="false" />
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">Emplacement</label>
+                                <div class="controls">
+                                    <input type="text" class="span6 form-control" required placeholder="Emplacement" name="salle" spellcheck="false" />
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <label class="control-label">Commentaires</label>
+                                <div class="controls">
+                                    <textarea type="text" class="span6 form-control" required placeholder="Commentaires" name="commentaire" spellcheck="false"></textarea>
                                 </div>
                             </div>
 
