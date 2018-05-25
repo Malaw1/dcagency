@@ -38,10 +38,8 @@
 
                 <label class="control-label">Fabricant :</label>
                 <div class="controls">
-                    <input placeholder="Fabricant" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[]" class="span11" type="text">                    
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-  Launch demo modal
-</button>
+                    <input placeholder="Fabricant" style="margin: 0 auto;" name="fabriquant" data-provide="typeahead" data-items="4" data-source="[]" class="span11" type="text">                    
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Nouveau Fabricant</button>
                 </div>
                 </div>
                 <div class="control-group">

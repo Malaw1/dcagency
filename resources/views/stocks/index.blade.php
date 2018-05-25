@@ -22,7 +22,9 @@
                   <th>Conditionnement</th>
                   <th>Num Lot</th>
                   <th>Fabriquant</th>
-                  <th>Quantite</th>
+                  <th>Quantite Recue</th>
+                  <th>Quantite Utilisee</th>
+                  <th>Quantite Restante</th>
                   <th>Date de Fab.</th>
                   <th>Date de Peremp. </th>
                 </tr>
@@ -35,6 +37,8 @@
                   <td>{{ $reactifs->conditionnement}}</td>
                   <td>{{ $reactifs->lot}}</td>
                   <td>{{ $reactifs->fabriquant}}</td>
+                  <td>{{ $reactifs->quantite}}</td>
+                  <td>{{ $reactifs->quantite}}</td>
                   <td>{{ $reactifs->quantite}}</td>
                   <td>{{ $reactifs->dateFab}}</td>
                   <td>{{ $reactifs->dateExp}}</td>
@@ -112,6 +116,7 @@
                   <th><strong>Nom fournisseur</strong></th>
                   <th><strong>Date fabrication</strong></th>
                   <th><strong>Date Péremption</strong></th>
+                  <th><strong>Site de Prelevement</strong></th>
                 </tr>
               </thead>
               <tbody>
@@ -126,6 +131,7 @@
                   <td>{{ $echantillon->fournisseur }}</td>
                   <td>{{ $echantillon->dateFab }}</td>
                   <td>{{ $echantillon->dateExp }}</td>
+                  <td></td>
                 </tr>
                 @endforeach
               </tbody>
@@ -139,7 +145,7 @@
         <div class="span12">
           <div class="widget-box">
             <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
-              <h5>Matieres Premieres |<a style="color: green;" href="{{('/substances')}}">Voire + </a></h5>
+              <h5>Reactifs |<a style="color: green;" href="{{('/substances')}}">Voire + </a></h5>
             </div>
             <div class="widget-content nopadding">
               <table class="table table-bordered table-striped with-check">
@@ -148,10 +154,12 @@
                   <th>ID</th>
                   <th>Designation</th>
                   <th>Conditionnement</th>
-                  <th>Quantite</th>
+                  <th>QuantiteRecu</th>
+                  <th>QuantiteUtilise</th>
                   <th>Lot</th>
                   <th>Exp. </th>
-                  <th>fabricant</th>                  
+                  <th>fabricant</th> 
+                  <th>Restant</th>                 
                 </tr>
               </thead>
               <tbody>
@@ -161,9 +169,11 @@
                       <td>{{ $substances->designation}}</td>
                       <td>{{ $substances->conditionnement}}</td>
                       <td>{{ $substances->quantiteRecue}}</td>
+                      <td>{{ $substances->quantiteRecue}}</td>
                       <td>{{ $substances->lot}}</td>
                       <td>{{ $substances->dateExp}}</td>
                       <td>{{ $substances->fabricant}}</td>
+                      <td>{{ }}</td>
                   </tr>
               @endforeach
               </tbody>

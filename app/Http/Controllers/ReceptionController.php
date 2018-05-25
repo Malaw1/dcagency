@@ -13,8 +13,19 @@ class ReceptionController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        return view('reception.index');
+    {   
+        // $recep = Reception::join('client', 'client.id', '=', 'receptions.client_id')
+        // ->join('client', 'client.id', '=', 'reception.client_id')
+        // ->get();
+        // $recep = Reception::join('client', 'receptions.client_id', '=', 'client.id')->select('client.*', 'receptions.*')->get();
+        // dd($users);
+
+        $recep = Reception::join('client', 'receptions.client_id', '=', 'client.id')->select('client.*', 'receptions.*')->get();
+
+        //$recep = Reception::join('reception', 'client.id', '=', 'receptions.client_id' )->select('client.*', 'receptions.*')->get();
+
+        
+        return view('reception.index', ['recep' => $recep]);
     }
 
     /**
