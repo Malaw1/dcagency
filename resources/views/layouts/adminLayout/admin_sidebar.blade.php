@@ -6,8 +6,9 @@
   <ul class="nav nav-sidebar">
     <li class="##"><a href="{{('../admin/dashboard')}}"><i class="icon icon-home" style="font-size: 24px;color:  #fff"></i> <span> <strong>Accueil</strong> </span></a> </li>
     <li class="##"><a href="{{('../reception/')}}"><i class="icon icon-home" style="font-size: 24px;color:  #fff"></i> <span> <strong>Reception</strong> </span></a> </li>
-    <li class="submenu"> <a href="#"><i class="icon icon-beaker" style="font-size: 24px;color:  #fff"></i> <span><strong>Echantillons</strong> </span> <span class="label label-important">2</span> </a> 
+    <li class="submenu"> <a href="#"><i class="icon icon-beaker" style="font-size: 24px;color:  #fff"></i> <span><strong>Echantillons</strong> </span> <span class="label label-important">5</span> </a> 
      <ul>
+        <li><a href="{{ url('/admin/ajouter-categorie') }}">Ajouter catégorie</a></li>
         <li><a href="{{ url('/admin/add-echantillon') }}">Ajouter échantillons</a></li>
         <li><a href="{{ url('/admin/voir-echantillon') }}">Consulter échantillons</a></li>
         <li><a href="#">Etudes de Faisabilité</a></li>

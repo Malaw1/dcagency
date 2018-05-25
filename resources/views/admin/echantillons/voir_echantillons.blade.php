@@ -50,10 +50,10 @@
                   <td>{{ $echantillon->formeGalenique }}</td>
                   <td>{{ $echantillon->quantiteRecu }}</td>
                   <td>{{ $echantillon->quantiteLivree }}</td>
-                  <td>{{ $echantillon->fournisseur }}</td>
+                  <td>{{ $echantillon->Fournisseur }}</td>
                   <td>{{ $echantillon->dateFab }}</td>
                   <td>{{ $echantillon->dateExp }}</td>
-                  <td class="center"><a href="{{ url('/admin/modifier-echantillon/' .$echantillon->id) }}" class="btn btn-primary btn-mini">Modifier</a> <a href="#" class="btn btn-danger btn-mini">Supprimer</a></td>
+                  <td class="center"><a href="{{ url('/admin/modifier-echantillon/' .$echantillon->id) }}" class="btn btn-primary btn-mini">Modifier</a> <a id="supEchan" href="{{ url('/admin/supprimer-echantillon/' .$echantillon->id) }}" class="btn btn-danger btn-mini">Supprimer</a></td>
                 </tr>
                 @endforeach
               </tbody>
