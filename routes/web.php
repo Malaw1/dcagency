@@ -34,10 +34,12 @@ Route::group(['middleware' =>['auth']],function(){
 	//Echantillons Routes (Admin)
 
 	Route::match(['get','post'],'/admin/add-echantillon', 'EchantillonController@addEchanillon');
-	Route::match(['get','post'], '/admin/modifier-echantillon/{id}', 'EchantillonController@modifierEchantillons');
+	Route::match(['get','post'],'/admin/modifier-echantillon/{id}','EchantillonController@modifierEchantillons');
+	Route::match(['get','post'],'/admin/supprimer-echantillon/{id}','EchantillonController@supprimerEchantillons');
+	Route::match(['get','post'],'/admin/ajouter-categorie', 'EchantillonController@addcatEchantillons');
 	Route::get('/admin/voir-echantillon', 'EchantillonController@voirEchantillons');
 	});
-
+    
 Route::get('/logout', 'AdminController@logout');
 
 Route::get('/stocks', 'StocksController@index');

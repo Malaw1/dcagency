@@ -110,4 +110,12 @@ $(document).ready(function(){
 			$(element).parents('.control-group').addClass('success');
 		}
 	});
+
+	$("#supEchan").click(function(){
+		alert("test");
+		if (confirm('Voulez vous vraiment supprimer cet échantillon?')){
+			return true;
+		}
+		return false;s
+	});
 });

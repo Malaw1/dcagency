@@ -97,7 +97,7 @@
 													</span>
 												</label>
 												<div class="col-sm-4">
-													<input class="form-control" id="fournisseur" name="fournisseur" placeholder="Nom fournisseur" type="text"/>
+													<input class="form-control" id="fournisseur" name="Fournisseur" placeholder="Nom fournisseur" type="text"/>
 												</div>
 											</div>
 											<div class="form-group ">
@@ -179,6 +179,7 @@
     </div>
   </div>
 </div>
+@endsection
 <script>
 	$('#addclient').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) // Button that triggered the modal
@@ -190,5 +191,3 @@
   modal.find('.modal-body input').val(recipient)
 })
 </script>
-
-@endsection
