@@ -13,17 +13,9 @@
         "axios": "^0.17",
         "bootstrap-sass": "^3.3.7",
         "cross-env": "^5.1",
-        "jquery": "^3.3.1",
+        "jquery": "^3.2",
         "laravel-mix": "^1.0",
         "lodash": "^4.17.4",
         "vue": "^2.5.7"
-    },
-    "dependencies": {
-        "datatables.net-autofill-bs": "^2.0.0",
-        "datatables.net-bs": "^1.10.16",
-        "datatables.net-buttons-bs": "^1.5.1",
-        "datatables.net-responsive-bs": "^2.2.1",
-        "datatables.net-rowgroup-bs": "^1.0.2",
-        "pdfmake": "^0.1.36"
     }
 }

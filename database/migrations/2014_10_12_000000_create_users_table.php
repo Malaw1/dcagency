@@ -18,9 +18,6 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
-            $table->string('poste_id');
-            $table->boolean('admin');
-            $table->foreign('poste_id')->references('id')->on('postes');
             $table->rememberToken();
             $table->timestamps();
         });

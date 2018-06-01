@@ -39,14 +39,19 @@ class EquipementsController extends Controller
     {
         $addequip = Equipement::create([
             'appareil' => $request->input('appareil'),
-            'marque' => $request->input('marque'),
-            'modele' => $request->input('modele'),
-            'serie' => $request->input('serie'),
-            'anneAcquis' => $request->input('anneAcquis'),
-            'societeContacter' => $request->input('societeContacter'),
-            'echelle' => $request->input('echelle'),
-            'precision' => $request->input('precision'),
             'code' => $request->input('code'),
+            'fabricant' => $request->input('fabricant'),
+            'type' => $request->input('type'),
+            'serie' => $request->input('serie'),
+            'societeContacter' => $request->input('societerContacter'),
+            'dateInstallation' => $request->input('dateInstallation'),
+            'documentTechDispo' => $request->input('documentTechDispo'),
+            'etat' => $request->input('etat'),
+            'salle' => $request->input('salle'),
+            'commentaire' => $request->input('commentaire'),
+            'dateQualification' => $request->input('dateQualification'),
+            'etat' => $request->input('etat'),
+                        
 
         ]);
 

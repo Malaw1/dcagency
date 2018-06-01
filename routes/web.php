@@ -40,11 +40,8 @@ Route::group(['middleware' =>['auth']],function(){
 
 Route::get('/logout', 'AdminController@logout');
 
-Route::get('/stocks', 'StocksController@index');
-Route::get('/users/listeperso', 'UsersController@index');
-Route::get('/substances', 'SubstancespuresController@index');
-Route::get('analyses/comprime', 'AnalysesController@addComp');
-
+Route::resource('equipement', 'EquipementController');
+Route::resource('Reception', 'ReceptionController');
 Route::get('/logout', 'AdminController@logout');
 Route::resource('stocks', 'StocksController');
 Route::resource('echantillons', 'EchantilonsController');

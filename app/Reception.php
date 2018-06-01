@@ -6,7 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Reception extends Model
 {
-    protected $fillable = [
-        'client_id', 'dateRecep', 'observation',
-     ];
+    //
 }
